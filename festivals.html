@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Festivals of India</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: #eee;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #000;
+      padding: 15px 30px;
+    }
+
+    .logo a {
+      text-decoration: none;
+      font-size: 24px;
+      color: #ffc107;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffc107;
+    }
+
+    .hero {
+      background-image: url('images/festivals/festival-banner.jpg');
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .hero h1 {
+      position: absolute;
+      bottom: 30px;
+      left: 40px;
+      font-size: 42px;
+      color: #fff;
+      z-index: 2;
+    }
+
+    .content {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card .info {
+      padding: 15px;
+    }
+
+    .card .info h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #ffc107;
+    }
+
+    .card .info p {
+      font-size: 14px;
+      color: #ccc;
+      margin-top: 8px;
+      line-height: 1.5;
+    }
+
+    @media(max-width: 600px) {
+      .hero h1 {
+        font-size: 28px;
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <a href="index.html">INDIA</a>
+    </div>
+    <div class="nav-links">
+      <a href="states.html">Heritage Sites</a>
+      <a href="festivals.html">Festivals</a>
+      <a href="traditions.html">Traditions</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Festivals of India</h1>
+  </div>
+
+  <div class="content">
+    <div class="gallery">
+      <div class="card">
+        <img src="images/festivals/diwali.jpg" alt="Diwali">
+        <div class="info">
+          <h3>Diwali</h3>
+          <p>Festival of lights, symbolizing the victory of light over darkness, celebrated with diyas and fireworks.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/festivals/holi.jpg" alt="Holi">
+        <div class="info">
+          <h3>Holi</h3>
+          <p>The vibrant festival of colors, celebrating spring, love, and the triumph of good over evil.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/festivals/onam.jpg" alt="Onam">
+        <div class="info">
+          <h3>Onam</h3>
+          <p>Harvest festival of Kerala with floral carpets, boat races, dances, and traditional feasts.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/festivals/navratri.jpg" alt="Navratri">
+        <div class="info">
+          <h3>Navratri</h3>
+          <p>Dedicated to Goddess Durga, celebrated for nine nights with Garba, fasting, and devotion.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/festivals/dussehra.jpg" alt="Dussehra">
+        <div class="info">
+          <h3>Dussehra</h3>
+          <p>Marks Lord Rama’s victory over Ravana, with dramatic plays and fireworks across India.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/festivals/ramnavami.jpg" alt="Ram Navami">
+        <div class="info">
+          <h3>Ram Navami</h3>
+          <p>Celebration of Lord Rama’s birth, with prayers, fasting, and reading of Ramayana scriptures.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/festivals/janmashtami.jpg" alt="Janmashtami">
+        <div class="info">
+          <h3>Janmashtami</h3>
+          <p>Birthday of Lord Krishna, celebrated with bhajans, fasting, and dramatic Dahi Handi events.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/festivals/ganeshchaturthi.jpg" alt="Ganesh Chaturthi">
+        <div class="info">
+          <h3>Ganesh Chaturthi</h3>
+          <p>Honors Lord Ganesha with idol immersion, rituals, and massive public celebrations.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/festivals/baisakhi.jpg" alt="Baisakhi">
+        <div class="info">
+          <h3>Baisakhi</h3>
+          <p>Harvest festival of Punjab, filled with bhangra, fairs, and cultural pride.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/festivals/eid.jpg" alt="Eid-ul-Fitr">
+        <div class="info">
+          <h3>Eid-ul-Fitr</h3>
+          <p>End of Ramadan, marked by prayers, community feasts, and giving to the poor.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/festivals/chhath.jpg" alt="Chhath Puja">
+        <div class="info">
+          <h3>Chhath Puja</h3>
+          <p>Sun worship festival in Bihar and UP, with rituals performed at riverbanks at sunrise and sunset.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/festivals/lohri.jpg" alt="Lohri">
+        <div class="info">
+          <h3>Lohri</h3>
+          <p>Bonfire festival of Punjab, celebrated with folk songs, dances, and sweets during winter.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

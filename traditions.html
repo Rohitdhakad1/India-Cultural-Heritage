@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Indian Traditions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: #f1f1f1;
+    }
+
+    header {
+      background-color: #222;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo a {
+      color: #ffc107;
+      font-size: 28px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .nav-links a {
+      color: #eee;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #ffc107;
+    }
+
+    .hero {
+      background-image: url('images/hero_tradition.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .hero h1 {
+      position: relative;
+      font-size: 42px;
+      color: #fff;
+      z-index: 1;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .intro {
+      margin-bottom: 40px;
+    }
+
+    .intro h2 {
+      color: #ffc107;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .intro p {
+      line-height: 1.7;
+      color: #ddd;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card .info {
+      padding: 15px;
+    }
+
+    .card .info h3 {
+      color: #ffc107;
+      font-size: 18px;
+      margin: 0 0 10px 0;
+    }
+
+    .card .info p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .back-button {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .back-button a {
+      background-color: #ffc107;
+      color: #000;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .back-button a:hover {
+      background-color: #ffda44;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">INDIA</a>
+    </div>
+    <div class="nav-links">
+      <a href="states.html">Heritage Sites</a>
+      <a href="festivals.html">Festivals</a>
+      <a href="traditions.html">Traditions</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Indian Traditions</h1>
+  </section>
+
+  <div class="container">
+    <div class="intro">
+      <h2>A Timeless Legacy</h2>
+      <p>India is a land of timeless traditions that connect its people across centuries. From sacred rituals and family values to community customs and symbolic attire, Indian traditions celebrate life's every stage with meaning and beauty. These traditions vary across states but reflect the unity and spiritual depth of Indian culture.</p>
+    </div>
+
+    <div class="gallery">
+      <div class="card">
+        <img src="images/traditions/namaste.jpg" alt="Namaste Greeting">
+        <div class="info">
+          <h3>Namaste</h3>
+          <p>A traditional Indian greeting symbolizing respect, peace, and humility.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/traditions/turmeric.jpg" alt="Haldi Ceremony">
+        <div class="info">
+          <h3>Haldi Ceremony</h3>
+          <p>A sacred wedding ritual applying turmeric for blessings, beauty, and purification.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/traditions/rangoli.jpg" alt="Rangoli Designs">
+        <div class="info">
+          <h3>Rangoli</h3>
+          <p>Colorful floor art made during festivals to welcome guests and ward off evil.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/traditions/yoga.jpg" alt="Yoga and Meditation">
+        <div class="info">
+          <h3>Yoga & Meditation</h3>
+          <p>Ancient practices rooted in Indian tradition to connect mind, body, and spirit.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/traditions/ghoonghat.jpg" alt="Traditional Attire">
+        <div class="info">
+          <h3>Traditional Attire</h3>
+          <p>Each region showcases unique attire like sarees, dhotis, turbans, and more.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/traditions/aarti.jpg" alt="Aarti Ritual">
+        <div class="info">
+          <h3>Aarti</h3>
+          <p>A divine light offering performed with devotion in temples and homes across India.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="back-button">
+      <a href="index.html">← Back to Home</a>
+    </div>
+  </div>
+
+</body>
+</html>

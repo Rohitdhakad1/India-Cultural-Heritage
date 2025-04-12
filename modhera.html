@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modhera Sun Temple</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: #eee;
+    }
+
+    .hero {
+      position: relative;
+      height: 300px;
+      background-image: url('images/modhera1.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .hero h1 {
+      position: absolute;
+      bottom: 20px;
+      left: 30px;
+      font-size: 48px;
+      color: #fff;
+      z-index: 2;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .description {
+      background-color: #1c1c1c;
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 40px;
+    }
+
+    .description h2 {
+      color: #ffc107;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .description p {
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      height: 200px;
+    }
+
+    .back-button {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .back-button a {
+      background-color: #ffc107;
+      padding: 12px 25px;
+      border-radius: 6px;
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .back-button a:hover {
+      background-color: #ffda44;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Modhera Sun Temple</h1>
+  </div>
+
+  <div class="content">
+    <div class="description">
+      <h2>About Modhera Sun Temple</h2>
+      <p>Located in Gujarat, the Modhera Sun Temple is a stunning 11th-century shrine dedicated to Surya, the Sun God. The temple is a brilliant example of Solanki architecture with intricately carved pillars, sculptures, and the beautiful Surya Kund (stepped tank).</p>
+      <p>The temple is aligned in such a way that the first rays of the sun illuminate the sanctum during equinoxes. It stands as a testament to India's astronomical and architectural brilliance.</p>
+    </div>
+
+    <div class="gallery">
+      <img src="images/modhera2.jpg" alt="Modhera Temple View">
+      <img src="images/modhera3.jpg" alt="Surya Kund">
+      <img src="images/modhera4.jpg" alt="Carvings of Modhera">
+    </div>
+
+    <div class="back-button">
+      <a href="index.html#slides_parent">← Back to Places</a>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chhattisgarh - Culture & Heritage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: #eee;
+    }
+
+    .hero {
+      position: relative;
+      height: 300px;
+      background-image: url('../images/read_more/chhattisgarh1.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .hero h1 {
+      position: absolute;
+      bottom: 20px;
+      left: 30px;
+      font-size: 48px;
+      color: #fff;
+      z-index: 2;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .description {
+      background-color: #1c1c1c;
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 40px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.05);
+    }
+
+    .description h2 {
+      color: #ffc107;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    .description p {
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card .info {
+      padding: 15px;
+    }
+
+    .card .info h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #ffc107;
+    }
+
+    .card .info p {
+      font-size: 14px;
+      color: #ccc;
+      margin-top: 8px;
+      line-height: 1.5;
+    }
+
+    .back-button {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .back-button a {
+      background-color: #ffc107;
+      padding: 12px 25px;
+      border-radius: 6px;
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .back-button a:hover {
+      background-color: #ffda44;
+    }
+
+    @media(max-width: 600px) {
+      .hero h1 {
+        font-size: 32px;
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Chhattisgarh</h1>
+  </div>
+
+  <div class="content">
+    <div class="description">
+      <h2>Cultural Heritage of Chhattisgarh</h2>
+      <p>Chhattisgarh is known for its deep-rooted tribal traditions, folk music, colorful dances, and intricate handicrafts. The region's tribal communities preserve ancient customs, festivals, and rituals passed down for generations.</p>
+      <p>The state is famous for traditional dance forms like Panthi and Raut Nacha, terracotta art, bell metal crafts, and natural attractions like Chitrakote Falls. Bastar Dussehra is a unique festival celebrated with great fervor, distinct from mainstream Dussehra.</p>
+    </div>
+
+    <div class="gallery">
+      <div class="card">
+        <img src="../images/read_more/chhattisgarh1.jpg" alt="Tribal Dance in Chhattisgarh">
+        <div class="info">
+          <h3>Tribal Dance</h3>
+          <p>Traditional folk dances like Panthi and Raut Nacha represent the cultural spirit of the tribal communities.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../images/read_more/chhattisgarh2.jpg" alt="Chitrakote Falls">
+        <div class="info">
+          <h3>Chitrakote Falls</h3>
+          <p>Often called the Niagara Falls of India, this waterfall is a natural wonder and a spiritual site for locals.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../images/read_more/chhattisgarh3.jpg" alt="Bastar Art and Craft">
+        <div class="info">
+          <h3>Bastar Art</h3>
+          <p>Renowned for its bell metal (Dhokra) craft, Bastar artisans create intricate tribal figurines and decorative pieces.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="back-button">
+      <a href="../states.html">← Back to States</a>
+    </div>
+  </div>
+
+</body>
+</html>

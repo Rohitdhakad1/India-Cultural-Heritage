@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karnataka - Culture & Heritage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: #eee;
+    }
+
+    .hero {
+      position: relative;
+      height: 300px;
+      background-image: url('../images/read_more/karnataka1.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .hero h1 {
+      position: absolute;
+      bottom: 20px;
+      left: 30px;
+      font-size: 48px;
+      color: #fff;
+      z-index: 2;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .description {
+      background-color: #1c1c1c;
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 40px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.05);
+    }
+
+    .description h2 {
+      color: #ffc107;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    .description p {
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card .info {
+      padding: 15px;
+    }
+
+    .card .info h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #ffc107;
+    }
+
+    .card .info p {
+      font-size: 14px;
+      color: #ccc;
+      margin-top: 8px;
+      line-height: 1.5;
+    }
+
+    .back-button {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .back-button a {
+      background-color: #ffc107;
+      padding: 12px 25px;
+      border-radius: 6px;
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .back-button a:hover {
+      background-color: #ffda44;
+    }
+
+    @media(max-width: 600px) {
+      .hero h1 {
+        font-size: 32px;
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Karnataka</h1>
+  </div>
+
+  <div class="content">
+    <div class="description">
+      <h2>Cultural Heritage of Karnataka</h2>
+      <p>Karnataka, a vibrant state in southern India, boasts a rich tapestry of history, architecture, and classical music. It's home to UNESCO World Heritage Sites like Hampi and Pattadakal, as well as the grand Mysore Palace. The state celebrates diverse festivals like Dasara with grandeur and devotion.</p>
+      <p>Karnataka is also renowned for its classical music (Carnatic and Hindustani), ancient temples, Kannada literature, and a unique blend of Dravidian and Islamic architecture seen in cities like Bijapur and Gulbarga.</p>
+    </div>
+
+    <div class="gallery">
+      <div class="card">
+        <img src="../images/read_more/karnataka1.jpg" alt="Mysore Palace">
+        <div class="info">
+          <h3>Mysore Palace</h3>
+          <p>An iconic symbol of Karnataka, known for its Indo-Saracenic architecture and dazzling illumination during Dasara.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../images/read_more/karnataka2.jpg" alt="Hampi Ruins">
+        <div class="info">
+          <h3>Hampi Ruins</h3>
+          <p>A UNESCO World Heritage Site filled with ancient temples and ruins from the Vijayanagara Empire.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../images/read_more/karnataka3.jpg" alt="Dasara Festival">
+        <div class="info">
+          <h3>Dasara Festival</h3>
+          <p>Celebrated with grandeur in Mysuru, featuring cultural performances, processions, and royal traditions.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="back-button">
+      <a href="../states.html">← Back to States</a>
+    </div>
+  </div>
+
+</body>
+</html>
